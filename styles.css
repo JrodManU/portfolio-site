@@ -37,7 +37,7 @@ body {
   border-radius:10px;
   padding:1rem
 }
-.itemContainer a {
+.itemContainer div > a {
   background-color:#236A62;
   display:inline-block;
   padding:10px;
@@ -49,7 +49,7 @@ body {
   text-decoration: none;
   border-bottom:3px solid #438A82;
 }
-.itemContainer a:hover {
+.itemContainer div > a:hover {
   background-color:#438A82;
 }
 .itemContainer p {
