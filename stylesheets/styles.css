@@ -4,6 +4,7 @@
   font-family:sans-serif;
 }
 body {
+  padding-bottom:2rem;
 }
 #pageContainer {
   max-width:1200px;
@@ -16,28 +17,28 @@ body {
   color:white;
   font-size:1.5rem;
 }
-.itemContainer {
+#itemContainer {
   display:grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap:2rem;
-  padding:2rem
+  padding:2rem;
 }
 @media (max-width: 900px) {
-  .itemContainer {
+  #itemContainer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 1200px) {
-  .itemContainer {
-    grid-template-columns: repeat(3, 1fr);
+@media (max-width: 600px) {
+  #itemContainer {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
-.itemContainer div {
+.item {
   background-color:#BBC8C6;
   border-radius:10px;
   padding:1rem
 }
-.itemContainer div > a {
+.item > a {
   background-color:#236A62;
   display:inline-block;
   padding:10px;
@@ -49,18 +50,12 @@ body {
   text-decoration: none;
   border-bottom:3px solid #438A82;
 }
-.itemContainer div > a:hover {
+.item > a:hover {
   background-color:#438A82;
 }
-.itemContainer p {
+#itemContainer p {
   margin-top:5px;
   border-radius:10px;
-}
-h2 {
-  margin:2rem 2rem 0 2rem;
-  color:#236A62;
-  border-bottom:2px solid #CF686F;
-  font-size:2rem;
 }
 footer {
   display:grid;
@@ -75,4 +70,8 @@ footer a {
 }
 footer a:hover {
   color: #AF484F;
+}
+#selfie {
+  width:100%;
+  border-radius:10px;
 }
