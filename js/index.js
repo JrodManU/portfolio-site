@@ -33,7 +33,7 @@ class Item extends React.Component {
   render() {
     return (
       <div className="item">
-        <a target="blank" href="{this.props.link}">{this.props.title}</a>
+        <a target="blank" href={this.props.link}>{this.props.title}</a>
         <p>{this.props.text}</p>
       </div>
     );
@@ -54,6 +54,7 @@ class ItemContainer extends React.Component {
         <Item title="Libgdx/Java" link="https://jrodmanu.itch.io/laser-jumper" text="Libgdx is a java game framework (no IDE) that I used to create multiple different projects. Libgdx was actually the first tool I used to create a full game. I learned a lot about OOP and taught myself Java."/>
         <Item title="App Development" link="https://play.google.com/store/apps/developer?id=Jared+Robbins&hl=en" text="I've created multiple different apps using different tools for mobile devices, both iPhones and Androids. I no longer possess my IOS developer liscence, but I retain some games on the Google Play store."/>
         <Item title="React" link="https://github.com/JrodManU/portfolio-site" text="React is a relatively new tool in my toolbox, but I like how it works and plan to continue learning about it. In fact, some of this website's UI was made using React (The nine items). As a developer, it is very valuable to continuously learn and improve skills, and React is one of the ways I am doing that."/>
+        <Item title="Node/Express/Socket.io" link="https://github.com/JrodManU/keyboard-war-backend" text="(In dev) Along with React I've also made it my quest to learn more about Node.js and Express. I am making a backend that allows clients to connect to eachother in a session, and issue live updates via Socket.io to the clients. I started the client by using socket.io-client and React. React allows me to automatically display the updates from Socket.io using states."/>
       </div>
     );
   }
